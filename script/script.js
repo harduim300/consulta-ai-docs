@@ -333,9 +333,10 @@
             data: { 
               type: "object", 
               properties: {
-                score: {type: "number"},
+                score: {type: "number", description: "Nota do usuário"},
                 recommendation: {
                   type: "array", 
+                  description: "Recomendações de mudanças de atendimento",
                   items: {
                     type: "object",
                     properties: {
