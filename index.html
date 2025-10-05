@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>Swagger UI - OpenAPI (HTML + JS separados)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Swagger UI CSS (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.29.1/swagger-ui.css" />
+  <style>
+    body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+    .topbar { background: #0b1220; color: #fff; padding: 10px 16px; display:flex; align-items:center; gap:12px; }
+    .topbar h1 { margin:0; font-size:16px; font-weight:600; }
+    .version { opacity:0.7; font-size:12px; }
+    #swagger-ui { height: calc(100vh - 52px); }
+    .swagger-ui .topbar { background: #111; border-bottom: none; }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <h1>Consulta.AI! - Documentação API — OpenAPI 3.0</h1>
+    <div class="version">versão: 1.0.0</div>
+  </div>
+
+  <div id="swagger-ui"></div>
+
+  <!-- Swagger UI JS (CDN) -->
+ <!-- Swagger UI JS (CDN, versão compatível com navegador) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.29.1/swagger-ui-bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.29.1/swagger-ui-standalone-preset.js"></script>
+
+
+  <!-- arquivo externo com a especificação e inicialização -->
+  <script src="./script/script.js"></script>
+</body>
+</html>
